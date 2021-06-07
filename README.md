@@ -13,7 +13,7 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 * prob_densities.m - function processes xy.mat gamma burst position data to generate a grid of 
 
 ### Data files
-* d1_gamma_xy.mat, d2_gamma_xy.mat, d3_gamma_xy.mat, d4_gamma_xy.mat, spon_gamma_xy.mat
+* d1_gamma_xy.mat, d2_gamma_xy.mat, d3_gamma_xy.mat, d4_gamma_xy.mat, spon_gamma_xy.mat,
  * Files with gamma burst centroid locations aggregated across 100 trials, 1000 ms after stimulus onset for each of the stimuli (D1, D2, D3, D4) + spontaneous period recordings respectively
 * 15sd_500time_16res.mat,
   * Baseline feature matrix test (500 ms stim period, 1.5 SDs above mean, 16x16 grid)
