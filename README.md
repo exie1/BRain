@@ -37,4 +37,4 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 * 25sd_1000time_24res.mat,
   * Highest probability density map resolution tested, 24 x 24 grid size
 * spont_25sd_1000time_20res.mat,
-  * Control dataset with no stimulus.
+  * Control dataset with no stimulus, with the same parameters as the optimal feature matrix.
