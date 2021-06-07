@@ -4,6 +4,7 @@
 % is generated in a subplot for convenience, but the report figures are
 % formatted slightly differently.
 % You will also want to fully expand the figure when it pops up!
+% Generates panels in Figure of Sec. III B
 
 close all
 figure(1)
