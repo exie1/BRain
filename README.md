@@ -7,11 +7,12 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 ## Brief description of included files
 
 ### Plotting files
-* plot_prob_densities.m - plots probability densities of gamma burst locations as in Sec. III B
+* plot_prob_densities.m
+  * Plots probability densities of gamma burst locations as in Sec. III B
 
 ### Functions
 * prob_densities.m
-  * function processes xy.mat gamma burst position data to generate a grid of probabilities for gamma burst locations
+  * Function processes xy.mat gamma burst position data to generate a grid of probabilities for gamma burst locations
 * TrainModel_final.py
   * Trains and tests algorithms + makes confusion matrix and evaluates cross validation mean accuracy and standard deviation
   * Model algorithm + feature matrix combination changed by setting the modelkey and datakey variables at the top of the file
