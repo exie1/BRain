@@ -13,10 +13,11 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 ### Functions
 * prob_densities.m
   * Function processes xy.mat gamma burst position data to generate a grid of probabilities for gamma burst locations
-* TrainModel_final.py
-  * Trains and tests algorithms + makes confusion matrix and evaluates cross validation mean accuracy and standard deviation
-  * Model algorithm + feature matrix combination changed by setting the modelkey and datakey variables at the top of the file
-
+* trainModel.py
+  * Trains and tests algorithms and generates confusion matrices
+  * Also evaluates and prints out the cross validation accuracy mean and standard deviation.
+  * User needs to define the algorithm (modelkey) and feature data (datakey) combination as inputs to the trainModel function.
+  * Note that scikit-learn version 0.24.1 was used to obtain our results.
 
 ### Data files
 * d1_gamma_xy.mat, d2_gamma_xy.mat, d3_gamma_xy.mat, d4_gamma_xy.mat, spon_gamma_xy.mat,
@@ -35,3 +36,5 @@ SIDs: 490379400, 490414549, 490378344, 490403912
   * As above but with higher resolution, 22 x 22 grid size
 * 25sd_1000time_24res.mat,
   * Highest probability density map resolution tested, 24 x 24 grid size
+* spont_25sd_1000time_20res.mat,
+  * Control dataset with no stimulus.
