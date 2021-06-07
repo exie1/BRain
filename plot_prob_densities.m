@@ -12,9 +12,10 @@ set(gcf,'color','w');
 n = 1:4; % stimulus directions
 letts = 'abcde';
 
+% Plotting for all moving grating stimuli, no spontaneous
 for d = n
     load(['d',num2str(d),'_gamma_xy.mat']); % array named 'xy' for all
-    h = prob_densities(xy);
+    h = prob_densities(xy); % get prob density array
     
     % Plotting
     subplot(2,3,d)
@@ -28,8 +29,9 @@ for d = n
     text(0.025,0.95,['(',letts(d),')'],'Units','normalized','FontSize',15,'Color','w')
 end
 
+% Plotting for spontaneous panel
 load('spon_gamma_xy.mat')
-h = prob_densities(xy);
+h = prob_densities(xy); % get prob density array
 subplot(2,3,5)
 imagesc(h);
 colormap('jet'); set(gca,'YDir','normal'); caxis([0,0.045])
