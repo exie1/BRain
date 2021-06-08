@@ -23,18 +23,20 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 * d1_gamma_xy.mat, d2_gamma_xy.mat, d3_gamma_xy.mat, d4_gamma_xy.mat, spon_gamma_xy.mat,
   * Files with gamma burst centroid locations aggregated across 100 trials, 1000 ms after stimulus onset for each of the stimuli (D1, D2, D3, D4) + spontaneous period recordings respectively
 * 15sd_500time_16res.mat,
-  * Baseline feature matrix test (500 ms stim period, 1.5 SDs above mean, 16x16 grid)
+  * Baseline feature matrix test (500 ms stimulus period, 1.5 SDs above mean, 16x16 grid)
 * 15sd_1000time_16res.mat,   
-  * Feature matrix tested with 1000 ms of stimulus period
+  * Feature matrix tested with sampling from 1000 ms of stimulus period
 * 25sd_500time_16res.mat,
-  * Feature matrix with 2.5 SDs above mean
+  * Feature matrix with 2.5 SDs above mean threshold for gamma burst detection.
+* 15sd_500time_20res.mat,
+  * Feature matrix with 20x20 histogram bins for the gamma burst probability density maps.
 * 25sd_1000time_16res.mat,
-  * Feature matrix with 1000 ms of stim period AND 2.5 SDs above mean
+  * Feature matrix with 1000ms sampling from stimulus period and 2.5 SDs above mean threshold
 * 25sd_1000time_20res.mat,
-  * Feature matrix with 2.5 SDs above mean, 1000 ms and 20 x 20 grid size
+  * Feature matrix with 2.5 SDs above mean threshold, 1000ms sampling from stimulus period and 20x20 histogram bins.
 * 25sd_1000time_22res.mat,
-  * As above but with higher resolution, 22 x 22 grid size
+  * As above but with a higher resolution of 22x22 histogram bins.
 * 25sd_1000time_24res.mat,
-  * Highest probability density map resolution tested, 24 x 24 grid size
+  * Highest probability density map resolution tested with 24x24 histogram bins.
 * spont_25sd_1000time_20res.mat,
   * Control dataset with no stimulus, with the same parameters as the optimal feature matrix.
