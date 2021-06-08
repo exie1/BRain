@@ -7,10 +7,17 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 ## Brief description of included files
 
 ### Plotting files
+* plot_onePattPlusTailFit.m
+  * Plots one pattern from D1 stimulus and histogram of tail for D1 with loglog fit
+* plot_avgTailDegree.m
+  * Plots the averaged tail degree across all stimuli and all trials for different time windows
 * plot_prob_densities.m
   * Plots probability densities of gamma burst locations as in Sec. III B
 
+
 ### Functions
+* extractTailDeg.m
+  * Processes a cell array of burst locations at different times to generate tail degrees for different time windows
 * prob_densities.m
   * Function processes xy.mat gamma burst position data to generate a grid of probabilities for gamma burst locations
 * trainModel.py
