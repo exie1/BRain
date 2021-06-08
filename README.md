@@ -14,7 +14,6 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 * plot_prob_densities.m
   * Plots probability densities of gamma burst locations as in Sec. III B
 
-
 ### Functions
 * extractTailDeg.m
   * Processes a cell array of burst locations at different times to generate tail degrees for different time windows
@@ -27,6 +26,10 @@ SIDs: 490379400, 490414549, 490378344, 490403912
   * Note that scikit-learn version 0.24.1 was used to obtain our results.
 
 ### Data files
+* d1_jump_sizes.mat
+  * Contains an array of centroid jump distances for D1 (collated across all trials)
+* d1_timeWindowedLocs.mat, d2_timeWindowedLocs.mat, d3_timeWindowedLocs.mat, d4_timeWindowedLocs.mat
+  * Give the gamma burst centroid locations NOT AGGREGATED for each direction
 * d1_gamma_xy.mat, d2_gamma_xy.mat, d3_gamma_xy.mat, d4_gamma_xy.mat, spon_gamma_xy.mat,
   * Files with gamma burst centroid locations aggregated across 100 trials, 1000 ms after stimulus onset for each of the stimuli (D1, D2, D3, D4) + spontaneous period recordings respectively
 * 15sd_500time_16res.mat,
