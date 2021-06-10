@@ -51,10 +51,10 @@ hold on;
 loglog(xloged,yloged);
 
 set(gca,'FontSize',20)
-xlabel('Jump distance, $\bar{J}$, (electrodes)','interpreter','latex','fontsize',24);
+xlabel('Jump distance, $J$, (electrodes)','interpreter','latex','fontsize',24);
 ylabel('Probability','interpreter','latex','fontsize',24)
 
-h1 = legend('D1 jump distance probability distribution','Power law fit, $f(\bar{J}$) = 10$^{-\gamma\bar{J}+\sigma}$','Interpreter','latex');
+h1 = legend('D1 jump distance probability distribution','Power law fit, $f(J)$ = 10$^{-\gamma J+\sigma}$','Interpreter','latex');
 
 fprintf('Power law fit parameters: gamma = %.4f, sigma = %.4f\n',-a(1),a(2))
 
