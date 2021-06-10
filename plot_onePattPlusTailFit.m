@@ -22,13 +22,14 @@ plot(b_xy(:,1),b_xy(:,2))
 axis square
 xlim([1,8]); ylim([3,10]);
 hold on
-plot(b_xy(1,1),b_xy(1,2),'.','MarkerSize',30)
-plot(b_xy(end,1),b_xy(end,2),'.','MarkerSize',30)
+plot(b_xy(1,1),b_xy(1,2),'.','MarkerSize',60)
+plot(b_xy(end,1),b_xy(end,2),'.','MarkerSize',60)
 
-h1 = legend('Gamma burst path','Initial position','Final position','Interpreter','latex','fontsize',12);
+h1 = legend('Gamma burst path','Initial position','Final position','Interpreter','latex');
 
-xlabel('$x$ (electrodes)','interpreter','latex','fontsize',15);
-ylabel('$y$ (electrodes)','interpreter','latex','fontsize',15);
+set(gca,'FontSize',20)
+xlabel('$x$ (electrodes)','interpreter','latex','fontsize',24);
+ylabel('$y$ (electrodes)','interpreter','latex','fontsize',24);
 
 % Plotting histogram + fitted tail
 subplot(122)
@@ -49,10 +50,11 @@ yloged = 10^a(2)*xloged.^a(1);
 hold on;
 loglog(xloged,yloged);
 
-xlabel('Jump distance, $\bar{J}$, (electrodes)','interpreter','latex','fontsize',15);
-ylabel('Probability','interpreter','latex','fontsize',15)
+set(gca,'FontSize',20)
+xlabel('Jump distance, $\bar{J}$, (electrodes)','interpreter','latex','fontsize',24);
+ylabel('Probability','interpreter','latex','fontsize',24)
 
-h1 = legend('D1 jump distance probability distribution','Power law fit, $f(\bar{J}$) = 10$^{-\gamma\bar{J}+\sigma}$','Interpreter','latex','fontsize',12);
+h1 = legend('D1 jump distance probability distribution','Power law fit, $f(\bar{J}$) = 10$^{-\gamma\bar{J}+\sigma}$','Interpreter','latex');
 
 fprintf('Power law fit parameters: gamma = %.4f, sigma = %.4f\n',-a(1),a(2))
 
