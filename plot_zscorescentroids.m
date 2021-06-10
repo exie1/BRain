@@ -29,11 +29,11 @@ set(gca,'XTick',1.5:u:9.5, 'XTickLabel', 1:10)
 set(gca,'YTick',1.5:u:9.5, 'YTickLabel', 1:10)
 set(gca,'YDir','normal')
 
-set(gca,'FontSize',12)
-xlabel('$x$ (electrodes)','interpreter','latex','fontsize',16)
-ylabel('$y$ (electrodes)','interpreter','latex','fontsize',16)
-ylabel(c,'$z$-score','interpreter','latex','fontsize',16)
-legend('Gamma burst centroid at $t = 1301$ ms','Interpreter','latex','fontsize',12,'Location','SouthEast');
+set(gca,'FontSize',20)
+xlabel('$x$ (electrodes)','interpreter','latex','fontsize',24)
+ylabel('$y$ (electrodes)','interpreter','latex','fontsize',24)
+ylabel(c,'$z$-score','interpreter','latex','fontsize',24)
+legend('Gamma burst centroid at $t = 1301$ ms','Interpreter','latex','fontsize',18,'Location','SouthEast');
 axis square
 
 subplot(122)
@@ -51,9 +51,9 @@ set(gca,'XTick',1.5:u:9.5, 'XTickLabel', 1:10)
 set(gca,'YTick',1.5:u:9.5, 'YTickLabel', 1:10)
 set(gca,'YDir','normal')
 
-set(gca,'FontSize',12)
-xlabel('$x$ (electrodes)','interpreter','latex','fontsize',16)
-ylabel('$y$ (electrodes)','interpreter','latex','fontsize',16)
-ylabel(c,'$z$-score','interpreter','latex','fontsize',16)
-legend('Gamma burst centroid at $t = 1301$ ms','Gamma burst centroid at $t = 1311$ ms','Interpreter','latex','fontsize',12,'Location','SouthEast');
+set(gca,'FontSize',20)
+xlabel('$x$ (electrodes)','interpreter','latex','fontsize',24)
+ylabel('$y$ (electrodes)','interpreter','latex','fontsize',24)
+ylabel(c,'$z$-score','interpreter','latex','fontsize',24)
+legend('Gamma burst centroid at $t = 1301$ ms','Gamma burst centroid at $t = 1311$ ms','Interpreter','latex','fontsize',18,'Location','SouthEast');
 axis square
