@@ -1,4 +1,4 @@
-# BRain: code dump for brain dynamics project
+# Dynamical Spatiotemporal Patterns in the BRaIn for Information Computation: Code and Data
 
 Repository for code used to generate figures in report for PHYS3888 ISP group, with supervisor A. Prof. Pulin Gong.
 
