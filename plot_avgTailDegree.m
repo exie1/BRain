@@ -14,7 +14,9 @@ for d = dirs
 end
 dirAvgDegs = mean(allDegs); % average
 t = (1:500:4000) + 250; % plotting at centres of 500 ms windows
-plot(t,abs(dirAvgDegs),'o-')
-xlabel('Time of recording (ms)','interpreter','latex','fontsize',15)
-ylabel('Stimulus-averaged, trial-averaged tail degree, $\gamma$','interpreter','latex','fontsize',15)
+h = plot(t,abs(dirAvgDegs),'s-','markersize',18);
+set(h, 'MarkerFaceColor', get(h,'Color')); 
+set(gca,'FontSize',24)
+xlabel('Time (ms)','interpreter','latex','fontsize',30)
+ylabel('Tail degree, $\gamma$','interpreter','latex','fontsize',30)
 axis square
