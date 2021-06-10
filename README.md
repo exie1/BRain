@@ -7,6 +7,8 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 ## Brief description of included files
 
 ### Plotting files
+* plot_zscorescentroids.m
+  * Plots the zscores and centroids for the same GBP at two different times
 * plot_onePattPlusTailFit.m
   * Plots one pattern from D1 stimulus and histogram of tail for D1 with loglog fit
 * plot_avgTailDegree.m
@@ -29,6 +31,8 @@ SIDs: 490379400, 490414549, 490378344, 490403912
   * Use "pip install -r requirements_pip.txt" to install the required dependencies using pip.
 
 ### Data files
+* somePatt_zscores_d1.mat
+  * zscores for 10x10 grid at two different times arbitrarily chosen for D1, trial 1, corresponding to the same GBP. Also has xy and t data for corresponding pattern
 * d1_jump_sizes.mat
   * Contains an array of centroid jump distances for D1 (collated across all trials)
 * d1_timeWindowedLocs.mat, d2_timeWindowedLocs.mat, d3_timeWindowedLocs.mat, d4_timeWindowedLocs.mat
