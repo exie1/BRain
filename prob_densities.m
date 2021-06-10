@@ -7,6 +7,6 @@ function h = prob_densities(xy)
 
     hist = hist3(xy,'Ctrs',{1:0.5:10 1:0.5:10},'CdataMode','auto');
     normhist = hist/sum(hist(:)); % probability normalisation
-    h = h'; % transpose for correct positions when plotting
+    h = normhist'; % transpose for correct positions when plotting
     
 end
