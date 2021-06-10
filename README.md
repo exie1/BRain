@@ -4,6 +4,8 @@ Repository for code used to generate figures in report for PHYS3888 ISP group, w
 
 SIDs: 490379400, 490414549, 490378344, 490403912
 
+All .m files were tested on MATLAB versions R2018b and above.
+
 ## Brief description of included files
 
 ### Plotting files
