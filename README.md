@@ -23,7 +23,10 @@ SIDs: 490379400, 490414549, 490378344, 490403912
   * Trains and tests algorithms and generates confusion matrices
   * Also evaluates and prints out the cross validation accuracy mean and standard deviation.
   * User needs to define the algorithm (modelkey) and feature data (datakey) combination as inputs to the trainModel function.
-  * Note that scikit-learn version 0.24.1 was used to obtain our results.
+  * We used Python 3.8.10 and key packages were scikit-learn 0.24.1, seaborn 0.11.1, matplotlib 3.3.4, numpy 1.19.2 and pandas 1.2.4. 
+  * See requirements_conda.txt or requirements_pip.txt for a full list of dependencies. 
+  * Use "conda create --name <env> --file requirements_conda.txt" to create the virtual Anaconda environment OR
+  * Use "pip install -r requirements_pip.txt" to install the required dependencies using pip.
 
 ### Data files
 * d1_jump_sizes.mat
