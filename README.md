@@ -22,7 +22,7 @@ SIDs: 490379400, 490414549, 490378344, 490403912
 * prob_densities.m
   * Function processes xy.mat gamma burst position data to generate a grid of probabilities for gamma burst locations
 * trainModel.py
-  * Trains and tests algorithms and outputs the performance statistics in a file called 'mode_perfstats.txt'
+  * Trains and tests algorithms and outputs the performance statistics in a file called 'model_perfstats.txt'
   * Also evaluates and prints out the cross validation accuracy mean and standard deviation.
   * User needs to define the algorithm (modelkey) and feature data (datakey) combination as inputs to the trainModel function.
   * We used Python 3.8.10 and key packages were scikit-learn 0.24.1, seaborn 0.11.1, matplotlib 3.3.4, numpy 1.19.2 and pandas 1.2.4. 
