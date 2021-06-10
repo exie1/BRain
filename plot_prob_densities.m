@@ -11,6 +11,7 @@ figure(1)
 set(gcf,'color','w');
 n = 1:4; % stimulus directions
 letts = 'abcde';
+g = [1,2,5,6];
 
 % Plotting for all moving grating stimuli, no spontaneous
 for d = n
@@ -18,27 +19,29 @@ for d = n
     h = prob_densities(xy); % get prob density array
     
     % Plotting
-    subplot(2,3,d)
+    subplot(2,4,g(d))
     imagesc(h);
     colormap('jet'); set(gca,'YDir','normal'); caxis([0,0.045])
     axis square; grid off
+    set(gca,'FontSize',12)
     set(gca,'XTick',1:2:20, 'XTickLabel', 1:10)
     set(gca,'YTick',1:2:20, 'YTickLabel', 1:10)
-    xlabel('$x$ (electrode widths)','interpreter','latex','fontsize',13)
-    ylabel('$y$ (electrode widths)','interpreter','latex','fontsize',13)
+    xlabel('$x$ (electrodes)','interpreter','latex','fontsize',16)
+    ylabel('$y$ (electrodes)','interpreter','latex','fontsize',16)
     text(0.025,0.95,['(',letts(d),')'],'Units','normalized','FontSize',15,'Color','w')
 end
 
 % Plotting for spontaneous panel
 load('spon_gamma_xy.mat')
 h = prob_densities(xy); % get prob density array
-subplot(2,3,5)
+subplot(1,2,2)
 imagesc(h);
 colormap('jet'); set(gca,'YDir','normal'); caxis([0,0.045])
 axis square; grid off; c = colorbar;
 set(gca,'XTick',1:2:20, 'XTickLabel', 1:10)
 set(gca,'YTick',1:2:20, 'YTickLabel', 1:10)
-xlabel('$x$ (electrode widths)','interpreter','latex','fontsize',13)
-ylabel('$y$ (electrode widths)','interpreter','latex','fontsize',13)
+xlabel('$x$ (electrodes)','interpreter','latex','fontsize',17)
+ylabel('$y$ (electrodes)','interpreter','latex','fontsize',17)
 text(0.025,0.95,['(',letts(5),')'],'Units','normalized','FontSize',15,'Color','w')
-ylabel(c,'Probability','interpreter','latex','fontsize',13)
+ylabel(c,'Probability','interpreter','latex','fontsize',18)
+set(gca,'FontSize',15)
