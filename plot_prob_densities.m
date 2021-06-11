@@ -20,14 +20,14 @@ for d = n
     
     % Plotting
     subplot(2,4,g(d))
-    imagesc(h);
+    imagesc(0:4000,0:4000,h);
     colormap('jet'); set(gca,'YDir','normal'); caxis([0,0.045])
     axis square; grid off
     set(gca,'FontSize',12)
-    set(gca,'XTick',1:2:20, 'XTickLabel', 1:10)
-    set(gca,'YTick',1:2:20, 'YTickLabel', 1:10)
-    xlabel('$x$ (electrodes)','interpreter','latex','fontsize',16)
-    ylabel('$y$ (electrodes)','interpreter','latex','fontsize',16)
+    set(gca,'XTick',0:1000:4000, 'XTickLabel', 0:1000:4000)
+    set(gca,'YTick',0:1000:4000, 'YTickLabel', 0:1000:4000)
+    xlabel('$x$ ($\mu$m)','interpreter','latex','fontsize',16)
+    ylabel('$y$ ($\mu$m)','interpreter','latex','fontsize',16)
     text(0.025,0.95,['(',letts(d),')'],'Units','normalized','FontSize',15,'Color','w')
 end
 
@@ -35,13 +35,13 @@ end
 load('spon_gamma_xy.mat')
 h = prob_densities(xy); % get prob density array
 subplot(1,2,2)
-imagesc(h);
+imagesc(0:4000,0:4000,h);
 colormap('jet'); set(gca,'YDir','normal'); caxis([0,0.045])
 axis square; grid off; c = colorbar;
-set(gca,'XTick',1:2:20, 'XTickLabel', 1:10)
-set(gca,'YTick',1:2:20, 'YTickLabel', 1:10)
-xlabel('$x$ (electrodes)','interpreter','latex','fontsize',17)
-ylabel('$y$ (electrodes)','interpreter','latex','fontsize',17)
+set(gca,'XTick',0:1000:4000, 'XTickLabel', 0:1000:4000)
+set(gca,'YTick',0:1000:4000, 'YTickLabel', 0:1000:4000)
+xlabel('$x$ ($\mu$m)','interpreter','latex','fontsize',17)
+ylabel('$y$ ($\mu$m)','interpreter','latex','fontsize',17)
 text(0.025,0.95,['(',letts(5),')'],'Units','normalized','FontSize',15,'Color','w')
 ylabel(c,'Probability','interpreter','latex','fontsize',18)
 set(gca,'FontSize',15)
