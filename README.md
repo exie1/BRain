@@ -9,6 +9,7 @@ All .m files were tested on MATLAB versions R2018b and above.
 ## Brief description of included files
 
 ### Files for reproducing results
+**Note:** Having tested the figure generation across several devices, the figures may look slightly different based on screen resolution
 * plot_zscorescentroids.m
   * Figure 1
   * Plots the zscores and centroids for the same GBP at two different times
