@@ -54,7 +54,7 @@ set(gca,'FontSize',20)
 xlabel('Jump distance $J$ ($\mu$m)','interpreter','latex','fontsize',24);
 ylabel('Probability','interpreter','latex','fontsize',24)
 
-h1 = legend('D1 jump distance probability distribution','Power law fit, $P(J)$ = $J^{-\gamma}$','Interpreter','latex');
+h1 = legend('D1 jump distance probability distribution','Power law fit, $P(J)$ $\propto$ $J^{-\gamma}$','Interpreter','latex');
 
 fprintf('Power law fit parameters: gamma = %.4f, sigma = %.4f\n',-a(1),a(2))
 
@@ -69,7 +69,7 @@ fprintf('Correlation coefficient (in loglog): R^2 = %.4f\n',Rsq)
 function [binCenters,Nnorm] = binLogLog(numBins,dataVector)
 
 % THIS FUNCTION IS SOURCED FROM:
-% B. Fulcher, PHYS3888, (2021), PHYS3888
+% B. Fulcher, PHYS3888, (2021),
 % https://github.com/PHYS3888
 
 if nargin < 1
