@@ -18,5 +18,5 @@ h = plot(t,abs(dirAvgDegs),'s-','markersize',18);
 set(h, 'MarkerFaceColor', get(h,'Color')); 
 set(gca,'FontSize',24)
 xlabel('Time (ms)','interpreter','latex','fontsize',30)
-ylabel('Tail degree, $\gamma$','interpreter','latex','fontsize',30)
+ylabel('Tail index $\gamma$','interpreter','latex','fontsize',30)
 axis square
