@@ -54,7 +54,7 @@ set(gca,'FontSize',20)
 xlabel('Jump distance $J$ ($\mu$m)','interpreter','latex','fontsize',24);
 ylabel('Probability','interpreter','latex','fontsize',24)
 
-h1 = legend('D1 jump distance probability distribution','Power law fit, $P(J)$ = J$^{-\gamma}$','Interpreter','latex');
+h1 = legend('D1 jump distance probability distribution','Power law fit, $P(J)$ = $J^{-\gamma}$','Interpreter','latex');
 
 fprintf('Power law fit parameters: gamma = %.4f, sigma = %.4f\n',-a(1),a(2))
 
