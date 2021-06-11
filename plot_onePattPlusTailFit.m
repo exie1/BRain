@@ -17,10 +17,10 @@ subplot(121)
 load('d1_timeWindowedLocs.mat'); % load patterns for a single stimulus
 stim_window = allWCentroids(4);
 bursts = stim_window{:};
-b_xy = cell2mat(bursts(230)); % favourite numbered pattern?
-plot(b_xy(:,1),b_xy(:,2))
+b_xy = cell2mat(bursts(230))*40; % favourite numbered pattern? 40 microns each electrode width
+plot(b_xy(:,1),b_xy(:,2)) % 
 axis square
-xlim([1,8]); ylim([3,10]);
+xlim([50,300]); ylim([150,400]);
 hold on
 plot(b_xy(1,1),b_xy(1,2),'.','MarkerSize',60)
 plot(b_xy(end,1),b_xy(end,2),'.','MarkerSize',60)
@@ -28,8 +28,8 @@ plot(b_xy(end,1),b_xy(end,2),'.','MarkerSize',60)
 h1 = legend('Gamma burst path','Initial position','Final position','Interpreter','latex');
 
 set(gca,'FontSize',20)
-xlabel('$x$ (electrodes)','interpreter','latex','fontsize',24);
-ylabel('$y$ (electrodes)','interpreter','latex','fontsize',24);
+xlabel('$x$ ($\mu$m)','interpreter','latex','fontsize',24);
+ylabel('$y$ ($\mu$m)','interpreter','latex','fontsize',24);
 
 % Plotting histogram + fitted tail
 subplot(122)
@@ -38,7 +38,7 @@ load('d1_jump_sizes.mat'); % gives matrix of jump sizes for D1, all bursts
 tail_jumps = jump_sizes(jump_sizes > 0.5);
 
 [centers,prob] = binLogLog(20,tail_jumps);
-centers = centers(prob>0);
+centers = centers(prob>0)*40;
 prob = prob(prob>0); % make sure we remove everything that is 0
 
 loglog(centers,prob); axis square
@@ -51,10 +51,10 @@ hold on;
 loglog(xloged,yloged);
 
 set(gca,'FontSize',20)
-xlabel('Jump distance, $J$, (electrodes)','interpreter','latex','fontsize',24);
+xlabel('Jump distance $J$ ($\mu$m)','interpreter','latex','fontsize',24);
 ylabel('Probability','interpreter','latex','fontsize',24)
 
-h1 = legend('D1 jump distance probability distribution','Power law fit, $f(J)$ = 10$^{-\gamma J+\sigma}$','Interpreter','latex');
+h1 = legend('D1 jump distance probability distribution','Power law fit, $P(J)$ = J$^{-\gamma}$','Interpreter','latex');
 
 fprintf('Power law fit parameters: gamma = %.4f, sigma = %.4f\n',-a(1),a(2))
 
