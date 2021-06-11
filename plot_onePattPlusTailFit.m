@@ -17,10 +17,10 @@ subplot(121)
 load('d1_timeWindowedLocs.mat'); % load patterns for a single stimulus
 stim_window = allWCentroids(4);
 bursts = stim_window{:};
-b_xy = cell2mat(bursts(230))*40; % favourite numbered pattern? 40 microns each electrode width
+b_xy = cell2mat(bursts(230))*400; % favourite numbered pattern? 400 microns each electrode width
 plot(b_xy(:,1),b_xy(:,2)) % 
 axis square
-xlim([50,300]); ylim([150,400]);
+xlim([500,3000]); ylim([1500,4000]);
 hold on
 plot(b_xy(1,1),b_xy(1,2),'.','MarkerSize',60)
 plot(b_xy(end,1),b_xy(end,2),'.','MarkerSize',60)
@@ -38,7 +38,7 @@ load('d1_jump_sizes.mat'); % gives matrix of jump sizes for D1, all bursts
 tail_jumps = jump_sizes(jump_sizes > 0.5);
 
 [centers,prob] = binLogLog(20,tail_jumps);
-centers = centers(prob>0)*40;
+centers = centers(prob>0)*400;
 prob = prob(prob>0); % make sure we remove everything that is 0
 
 loglog(centers,prob); axis square
