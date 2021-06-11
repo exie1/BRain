@@ -8,22 +8,21 @@ All .m files were tested on MATLAB versions R2018b and above.
 
 ## Brief description of included files
 
-### Plotting files
+### Files for reproducing results
 * plot_zscorescentroids.m
+  * Figure 1
   * Plots the zscores and centroids for the same GBP at two different times
 * plot_onePattPlusTailFit.m
+  * Figure 2
   * Plots one pattern from D1 stimulus and histogram of tail for D1 with loglog fit
 * plot_avgTailDegree.m
+  * Figure 3
   * Plots the averaged tail degree across all stimuli and all trials for different time windows
 * plot_prob_densities.m
+  * Figure 4
   * Plots probability densities of gamma burst locations as in Sec. III B
-
-### Functions
-* extractTailDeg.m
-  * Processes a cell array of burst locations at different times to generate tail degrees for different time windows
-* prob_densities.m
-  * Function processes xy.mat gamma burst position data to generate a grid of probabilities for gamma burst locations
 * trainModel.py
+  * Table 1
   * Trains and tests algorithms and outputs the performance statistics in a file called 'model_perfstats.txt'
   * Also evaluates and prints out the cross validation accuracy mean and standard deviation.
   * User needs to define the algorithm (modelkey) and feature data (datakey) combination as inputs to the trainModel function.
@@ -31,6 +30,12 @@ All .m files were tested on MATLAB versions R2018b and above.
   * See requirements_conda.txt or requirements_pip.txt for a full list of dependencies. 
   * Use "conda create --name <env> --file requirements_conda.txt" to create the virtual Anaconda environment with your choice of name <env> OR
   * Use "pip install -r requirements_pip.txt" to install the required dependencies using pip.
+
+### Functions
+* extractTailDeg.m
+  * Processes a cell array of burst locations at different times to generate tail degrees for different time windows
+* prob_densities.m
+  * Function processes xy.mat gamma burst position data to generate a grid of probabilities for gamma burst locations
 
 ### Data files
 * somePatt_zscores_d1.mat
